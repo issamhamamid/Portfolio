@@ -20,7 +20,7 @@ export const Header = () => {
         })
     }, []);
     return (
-        <header className={clsx('bg-[#080e21] w-full py-5 px-4 fixed top-0 ' , {'h-screen' : isOpen})}>
+        <header className={clsx('bg-[#080e21] w-full py-5 px-4 fixed top-0 z-10 ' , {'h-screen' : isOpen})}>
             <div className='w-full xl:w-340 px-6 flex items-center justify-between mx-auto'>
                <h1 className='text-[#9b87f5] text-2xl font-extrabold tracking-wide'>ISM.</h1>
                 <nav className={clsx(' hidden lg:flex gap-1', {'flex-col': isOpen})}>

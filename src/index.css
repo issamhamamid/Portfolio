@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@tailwind utilities;
 
 *{
     box-sizing: border-box;
@@ -6,4 +7,38 @@
 
 body{
     font-family: "Inter", sans-serif;
+}
+
+
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(20px, 10px) scale(1.05);
+    }
+    66% {
+        transform: translate(20px, 10px) scale(0.8);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.blob {
+    animation: blob 6s ease-in-out infinite;
+}
+
+
+.slide-in {
+    transform: translateY(10px);
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

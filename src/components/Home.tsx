@@ -4,19 +4,32 @@ import { FaDownload } from "react-icons/fa6";
 import {Python , PostgreSQL , React_Icon  , Docker , JavaScript} from "./../data/Icons";
 import { LuBrainCircuit } from "react-icons/lu";
 import { FaCodeBranch } from "react-icons/fa6";
+import {useEffect, useState} from "react";
 
 export const Home = () => {
+    const [index, setIndex] = useState(0);
+    const roles = ["Web Developer", "Data Analyst", "AI & ML Enthusiast"];
+    useEffect(() => {
+        const interval = setInterval(()=>{
+            setIndex(prevIndex => (prevIndex + 1) % roles.length);
+        }, 4000)
+
+        return ()=>{
+            clearInterval(interval);
+        }
+    }, []);
+
     return (
-        <>
-           <section className='bg-[#080e21] h-screen flex items-center py-25'>
+          <>
+           <section className='bg-[#080e21] h-screen flex items-center py-25 relative overflow-hidden'>
                 <div className='w-full xl:w-340 px-6 mx-auto '>
                     <div className='flex'>
                         <div className='w-1/2 flex flex-col'>
                                 <div className=' mb-1 text-center w-45 text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl p-0.5 '>
                                     Welcome to my portfolio
                                 </div>
-                                <span className=' leading-none text-[2.5rem] xl:text-[3rem] bg-clip-text text-transparent font-bold  bg-gradient-to-r from-teal-400 to-amber-400'>Issam Hammamid</span>
-                                <h2 className='text-[1.9rem] font-semibold text-[#94a3b8] mb-5'>Web Developer</h2>
+                                <span className=' leading-none text-[2.5rem] xl:text-[3rem] mb-2 bg-clip-text text-transparent font-bold  bg-gradient-to-r from-teal-400 to-amber-400'>Issam Hammamid</span>
+                                <h2 key={roles[index]} className='  slide-in text-[1.9rem] font-semibold text-[#94a3b8] mb-5'>{roles[index]}</h2>
                                 <p className=' w-100 md:w-120 xl:w-130 text-lg/7 text-[#94a3b8] '>
                                     Passionate about programming and software engineering.
                                     I specialize in web development,
@@ -137,7 +150,37 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
+            <div className='absolute  top-1/3 -left-20 w-72 h-72 bg-amber-500/20 rounded-full filter blur-3xl opacity-30 blob '></div>
+            <div className='absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-60 h-60 bg-rose-500/20 rounded-full filter blur-3xl opacity-30 blob'></div>
            </section>
-        </>
+           <section className='flex flex-col items-center gap-4 bg-[#080e21] py-20'>
+                  <div
+                      className=' text-center  text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl py-1 px-3  '>
+                      Skills
+                  </div>
+                  <h1 className=' text-white text-4xl font-bold'>Tech Stack</h1>
+                  <p className='text-md/7 text-[#94a3b8] '>
+                      A collection of technologies I work with to build web applications and solve complex problems.
+                  </p>
+               <div className='grid grid-cols-2 gap-6 w-3xl'>
+                   <div
+                       className=' border-1 border-[#4E5260] bg-[#212738] rounded-lg p-4 flex flex-col items-center gap-1'>
+                       <div className='flex justify-between items-center w-full '>
+                           <h1 className='text-white font-bold text-[1.1rem]'>Python</h1>
+                           <p className='text-sm text-[#94a3b8]'>90%</p>
+                       </div>
+                   </div>
+
+                   <div
+                       className=' border-1 border-[#4E5260] bg-[#212738] rounded-lg p-4 flex flex-col items-center gap-1'>
+                       <div className='flex justify-between items-center w-full'>
+                           <h1 className='text-white font-bold text-[1.1rem]'>Python</h1>
+                           <p className='text-sm text-[#94a3b8]'>90%</p>
+                       </div>
+                   </div>
+
+               </div>
+           </section>
+          </>
     );
 };
