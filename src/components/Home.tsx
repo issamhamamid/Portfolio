@@ -24,9 +24,9 @@ export const Home = () => {
     return (
           <>
            <section className='bg-[#080e21] h-screen flex items-center py-25 px-4 relative overflow-hidden'>
-                <div className='w-full xl:w-340  mx-auto '>
-                    <div className='flex'>
-                        <div className='w-1/2 flex flex-col'>
+                <div  className='w-full xl:w-340  mx-auto bg '>
+                    <div className=' flex'>
+                        <div data-aos="fade-up" data-aos-duration="1000"    className='w-1/2 flex flex-col'>
                                 <div className=' mb-1 text-center w-45 text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl p-0.5 '>
                                     Welcome to my portfolio
                                 </div>
@@ -52,7 +52,7 @@ export const Home = () => {
                                 </div>
                         </div>
 
-                        <div className=' hidden lg:grid p-5 w-1/2  bg-gradient-to-br from-teal-500/20 to-transparent rounded-lg border-1 border-[#4E5260]  grid-cols-6 gap-4'>
+                        <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"  className=' hidden lg:grid p-5 w-1/2  bg-gradient-to-br from-teal-500/20 to-transparent rounded-lg border-1 border-[#4E5260]  grid-cols-6 gap-4'>
 
                                 <div className=' hover:scale-105 transform transition duration-300 ease-in-out border border-[#6b8d92] hover:shadow-xl hover:shadow-cyan-400/20 flex flex-col bg-[#456D73] rounded-lg py-1 lg:py-3 md:py-4  xl:py-6 px-5 text-white text-lg font-bold col-span-3 '>
                                     <div className='flex items-center gap-2 mb-1'>
@@ -164,9 +164,9 @@ export const Home = () => {
                   <p className='text-md/7 text-[#94a3b8] mb-9 '>
                       A collection of technologies I work with to build web applications and solve complex problems.
                   </p>
-               <div className=' grid lg:grid-cols-2 grid-cols-1 gap-7  w-full lg:w-3xl'>
+               <div   data-aos-duration="1500"  className=' grid lg:grid-cols-2 grid-cols-1 gap-7  w-full lg:w-3xl'>
                    {skills.map((skill)=>{
-                       return <Skill {...skill}/>
+                       return <Skill key={skill.name} {...skill}/>
                    })}
                </div>
            </section>
