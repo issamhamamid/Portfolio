@@ -5,6 +5,8 @@ import {Python , PostgreSQL , React_Icon  , Docker , JavaScript} from "./../data
 import { LuBrainCircuit } from "react-icons/lu";
 import { FaCodeBranch } from "react-icons/fa6";
 import {useEffect, useState} from "react";
+import {Skill} from "./Skill.tsx";
+import {skills} from "./../data/Skills.ts";
 
 export const Home = () => {
     const [index, setIndex] = useState(0);
@@ -21,8 +23,8 @@ export const Home = () => {
 
     return (
           <>
-           <section className='bg-[#080e21] h-screen flex items-center py-25 relative overflow-hidden'>
-                <div className='w-full xl:w-340 px-6 mx-auto '>
+           <section className='bg-[#080e21] h-screen flex items-center py-25 px-4 relative overflow-hidden'>
+                <div className='w-full xl:w-340  mx-auto '>
                     <div className='flex'>
                         <div className='w-1/2 flex flex-col'>
                                 <div className=' mb-1 text-center w-45 text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl p-0.5 '>
@@ -153,32 +155,19 @@ export const Home = () => {
             <div className='absolute  top-1/3 -left-20 w-72 h-72 bg-amber-500/20 rounded-full filter blur-3xl opacity-30 blob '></div>
             <div className='absolute -bottom-20 left-1/2 transform -translate-x-1/2 w-60 h-60 bg-rose-500/20 rounded-full filter blur-3xl opacity-30 blob'></div>
            </section>
-           <section className='flex flex-col items-center gap-4 bg-[#080e21] py-20'>
+           <section className='flex flex-col items-center gap-4 bg-[#080e21] py-20 px-4'>
                   <div
                       className=' text-center  text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl py-1 px-3  '>
                       Skills
                   </div>
                   <h1 className=' text-white text-4xl font-bold'>Tech Stack</h1>
-                  <p className='text-md/7 text-[#94a3b8] '>
+                  <p className='text-md/7 text-[#94a3b8] mb-9 '>
                       A collection of technologies I work with to build web applications and solve complex problems.
                   </p>
-               <div className='grid grid-cols-2 gap-6 w-3xl'>
-                   <div
-                       className=' border-1 border-[#4E5260] bg-[#212738] rounded-lg p-4 flex flex-col items-center gap-1'>
-                       <div className='flex justify-between items-center w-full '>
-                           <h1 className='text-white font-bold text-[1.1rem]'>Python</h1>
-                           <p className='text-sm text-[#94a3b8]'>90%</p>
-                       </div>
-                   </div>
-
-                   <div
-                       className=' border-1 border-[#4E5260] bg-[#212738] rounded-lg p-4 flex flex-col items-center gap-1'>
-                       <div className='flex justify-between items-center w-full'>
-                           <h1 className='text-white font-bold text-[1.1rem]'>Python</h1>
-                           <p className='text-sm text-[#94a3b8]'>90%</p>
-                       </div>
-                   </div>
-
+               <div className=' grid lg:grid-cols-2 grid-cols-1 gap-7  w-full lg:w-3xl'>
+                   {skills.map((skill)=>{
+                       return <Skill {...skill}/>
+                   })}
                </div>
            </section>
           </>
