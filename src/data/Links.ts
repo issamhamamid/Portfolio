@@ -25,8 +25,8 @@ const Links : Link[] = [
         url : "/projects"
     } ,
     {
-        name : "Resume",
-        url : "/resume"
+        name : "Experience",
+        url : "/experience"
     } ,
     {
         name : "Contact",

@@ -7,6 +7,7 @@ import { FaCodeBranch } from "react-icons/fa6";
 import {useEffect, useState} from "react";
 import {Skill} from "./Skill.tsx";
 import {skills} from "./../data/Skills.ts";
+import {ProjectCard} from "./ProjectCard.tsx";
 
 export const Home = () => {
     const [index, setIndex] = useState(0);
@@ -170,6 +171,21 @@ export const Home = () => {
                    })}
                </div>
            </section>
+              <section className='flex flex-col items-center gap-4 bg-[#0f1124] py-20 px-4'>
+                  <div
+                      className=' text-center  text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl py-1 px-3  '>
+                      Projects
+                  </div>
+                  <h1 className=' text-white text-4xl font-bold'>Featured Projects</h1>
+                  <p className='text-md/7 text-[#94a3b8] mb-9 '>
+                      A selection of my recent web development and programming projects.
+                  </p>
+                  <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 w-full lg:xl:w-340'>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                  </div>
+              </section>
           </>
     );
 };
