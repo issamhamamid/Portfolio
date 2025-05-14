@@ -1,12 +1,13 @@
-
 import Links from "./../data/Links";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
 import {useEffect, useState} from "react";
 import clsx from "clsx";
+import {useScroll} from "../customHook/useScroll.ts";
 
 export const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const isScrolled = useScroll(7);
 
     useEffect(() => {
         window.addEventListener('resize' , ()=>{
@@ -19,10 +20,15 @@ export const Header = () => {
             }
         })
     }, []);
+
+
     return (
-        <header className={clsx('bg-[#080e21] w-full py-5 px-4 fixed top-0 z-10 ' , {'h-screen' : isOpen})}>
+        <header className={clsx('bg-[#080e21]/80  w-full px-4 fixed top-0 z-10 transition-[padding] duration-300 ease-out',
+            {'h-screen' : isOpen},
+            isScrolled ? ' py-3 backdrop-blur-md shadow-xl' : 'py-5'
+        )}>
             <div className='w-full xl:w-340 px-6 flex items-center justify-between mx-auto'>
-               <h1 className='text-[#9b87f5] text-2xl font-extrabold tracking-wide'>ISM.</h1>
+                <h1 className='text-[#9b87f5] text-2xl font-extrabold tracking-wide'>ISM.</h1>
                 <nav className={clsx(' hidden lg:flex gap-1', {'flex-col': isOpen})}>
                     {
                         Links.map((link) => (

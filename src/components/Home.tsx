@@ -38,7 +38,7 @@ export const Home = () => {
                                     combining analytical thinking with creative implementation. Always seeking new challenges
                                     to expand my technical expertise and create impactful applications that solve real-world problems.
                                 </p>
-                                <div className='flex gap-4 mt-8 w-100'>
+                                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className='flex gap-4 mt-8 w-100'>
                                     <button className='  gap-2 flex items-center  rounded-lg text-center text-white px-5 py-2.5 bg-[#27BAA9] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
                                         Get in Touch
                                         <FiArrowRight/>
