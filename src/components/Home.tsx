@@ -8,6 +8,7 @@ import {useEffect, useState} from "react";
 import {Skill} from "./Skill.tsx";
 import {skills} from "./../data/Skills.ts";
 import {ProjectCard} from "./ProjectCard.tsx";
+import {recent_projects} from "../data/Projects.ts";
 
 export const Home = () => {
     const [index, setIndex] = useState(0);
@@ -180,10 +181,10 @@ export const Home = () => {
                   <p className='text-md/7 text-[#94a3b8] mb-9 '>
                       A selection of my recent web development and programming projects.
                   </p>
-                  <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 w-full lg:xl:w-340'>
-                        <ProjectCard/>
-                        <ProjectCard/>
-                        <ProjectCard/>
+                  <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 w-full 2xl:w-340'>
+                      {recent_projects.map((recent_project , index)=>{
+                          return <ProjectCard delay={(index*150).toString()}  key={ recent_project.name} {...recent_project}/>
+                      })}
                   </div>
               </section>
           </>
