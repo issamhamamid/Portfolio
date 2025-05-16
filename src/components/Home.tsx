@@ -9,6 +9,7 @@ import {Skill} from "./Skill.tsx";
 import {skills} from "./../data/Skills.ts";
 import {ProjectCard} from "./ProjectCard.tsx";
 import {recent_projects} from "../data/Projects.ts";
+import { FaRegStar } from "react-icons/fa";
 
 export const Home = () => {
     const [index, setIndex] = useState(0);
@@ -179,18 +180,33 @@ export const Home = () => {
                   </div>
                   <h1 className=' text-white text-4xl font-bold'>Featured Projects</h1>
                   <p className='text-md/7 text-[#94a3b8] mb-9 '>
-                      A selection of my recent web development and programming projects.
+                      A selection of my recent personal projects.
                   </p>
                   <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 w-full 2xl:w-340 mb-6'>
                       {recent_projects.map((recent_project , index)=>{
                           return <ProjectCard delay={(index*50).toString()}  key={ recent_project.name} {...recent_project}/>
                       })}
                   </div>
-                  <button data-aos="zoom-in" data-aos-delay = "300" data-aos-duration="1000"
+                  <button data-aos="zoom-in" data-aos-delay = "200" data-aos-duration="1000"
                       className='  gap-2 flex items-center  rounded-lg text-center text-white px-5 py-2.5 bg-[#27BAA9] cursor-pointer '>
                       View All Projects
                       <FiArrowRight/>
                   </button>
+              </section>
+              <section className='bg-[#080E21] px-4 py-20 flex flex-col items-center'>
+                  <div data-aos = "zoom-in" data-aos-duration="1000"
+                      className=' max-w-4xl bg-[#212738] border border-[#6b8d92] flex flex-col gap-5 items-center py-7 px-10 rounded-lg'>
+                      <div className='flex flex-col items-center p-3 rounded-full bg-[#1F3543]'>
+                          <FaRegStar className='text-[#2DD4BF] text-[2rem]'/>
+                      </div>
+                      <h1 className='text-3xl font-bold text-white'>Let's Work Together</h1>
+                      <p className='text-center max-w-4/5 text-md font-semibold text-[#94a3b8]'>I'm currently available to work and open to new opportunities. If you have a project in mind or want to
+                          collaborate, let's connect!</p>
+                      <button className=' gap-2 flex items-center  rounded-lg text-center text-white px-7 py-4 bg-[#27BAA9] cursor-pointer '>
+                          Get In Touch
+                          <FiArrowRight/>
+                      </button>
+                  </div>
               </section>
           </>
     );
