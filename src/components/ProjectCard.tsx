@@ -6,7 +6,7 @@ import type {FC} from "react";
 
 export const ProjectCard : FC<{name : string , description : string , tags : string[] , gh_link : string , image : string , delay : string}> = ({name , gh_link , tags , image , description , delay}) => {
     return (
-        <div data-aos="fade-right" data-aos-duration = "1300" data-aos-delay = {delay} className='bg-[#27293b] flex flex-col rounded-lg p-0 border border-[#4E5260] overflow-hidden'>
+        <div data-aos="fade-left" data-aos-duration = "1300" data-aos-delay = {delay} className='bg-[#27293b] flex flex-col rounded-lg p-0 border border-[#4E5260] overflow-hidden'>
             <div className='h-50 overflow-hidden'>
                 <img className='w-full h-full object-cover rounded-t-lg transition-transform duration-400 ease-in-out hover:scale-108'
                      src={image}
@@ -14,11 +14,11 @@ export const ProjectCard : FC<{name : string , description : string , tags : str
             </div>
             <div className='flex flex-col gap-4 p-5'>
                 <p className='text-white font-bold text-[1.1rem] '>{name}</p>
-                <p className='text-md font-semibold text-[#94a3b8] xl:h-34'>{description}</p>
-                <div className='grid grid-cols-[repeat(auto-fit,_minmax(0,_max-content))] gap-2'>
+                <p className='text-md font-semibold text-[#94a3b8] lg:h-45 xl:h-34'>{description}</p>
+                <div className='flex flex-wrap gap-2'>
                     {tags.map((tag) => (
                         <div key={tag}
-                            className=' text-center  text-[.75rem] font-bold text-white bg-[#171529] rounded-xl py-1 px-2'>
+                            className=' text-center  text-[.75rem] font-bold text-white bg-[#171529] rounded-xl py-1 px-3'>
                             {tag}
                         </div>
                     ))}
@@ -29,7 +29,7 @@ export const ProjectCard : FC<{name : string , description : string , tags : str
                         <span>View Details</span>
                         < IoMdArrowForward />
                     </a>
-                    <a href={gh_link} className='flex gap-2 font-bold hover:text-white cursor-pointer transition transition-hover duration-300 ease-out items-center text-[#94a3b8]'>
+                    <a href={gh_link} className='flex  gap-2 font-bold hover:text-white cursor-pointer transition transition-hover duration-300 ease-out items-center text-[#94a3b8]'>
                         <FiGithub/>
                         <span>Source Code</span>
                     </a>

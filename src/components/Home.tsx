@@ -16,7 +16,7 @@ export const Home = () => {
     useEffect(() => {
         const interval = setInterval(()=>{
             setIndex(prevIndex => (prevIndex + 1) % roles.length);
-        }, 4000)
+        }, 3000)
 
         return ()=>{
             clearInterval(interval);
@@ -181,11 +181,16 @@ export const Home = () => {
                   <p className='text-md/7 text-[#94a3b8] mb-9 '>
                       A selection of my recent web development and programming projects.
                   </p>
-                  <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 w-full 2xl:w-340'>
+                  <div className='grid grid-cols-1 lg:grid-cols-3 gap-7 w-full 2xl:w-340 mb-6'>
                       {recent_projects.map((recent_project , index)=>{
-                          return <ProjectCard delay={(index*150).toString()}  key={ recent_project.name} {...recent_project}/>
+                          return <ProjectCard delay={(index*50).toString()}  key={ recent_project.name} {...recent_project}/>
                       })}
                   </div>
+                  <button data-aos="zoom-in" data-aos-delay = "300" data-aos-duration="1000"
+                      className='  gap-2 flex items-center  rounded-lg text-center text-white px-5 py-2.5 bg-[#27BAA9] cursor-pointer '>
+                      View All Projects
+                      <FiArrowRight/>
+                  </button>
               </section>
           </>
     );
