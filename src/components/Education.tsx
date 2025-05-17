@@ -10,7 +10,7 @@ export const Education = () => {
                 className=' text-center  text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl py-1 px-3  '>
                 Education
             </div>
-            <h1 className=' text-white text-5xl font-bold'>Academic Background</h1>
+            <h1 className=' text-center text-white text-5xl font-bold'>Academic Background</h1>
             <p className='text-lg/7 max-w-190 text-center text-[#94a3b8] mb-9 '>
                 My academic journey, courses, and educational achievements that have shaped my technical expertise.
             </p>
@@ -28,7 +28,7 @@ export const Education = () => {
                         <div className='flex gap-5 items-center '>
                             <div className='flex gap-1  text-[0.95rem] text-[#94a3b8] self-center '>
                                 <MdOutlineCalendarToday className='text-[1rem] mb-0.5 self-center '/>
-                                2020 - 2023
+                                2019 - 2023
                             </div>
                             <div className='flex gap-1  text-[0.95rem] text-[#94a3b8] self-center '>
                                 <HiOutlineLocationMarker className='text-[1rem] mb-0.5 self-center '/>
@@ -36,7 +36,7 @@ export const Education = () => {
                             </div>
                         </div>
                         <ul className="list-disc ms-5 text-[0.95rem] text-[#94a3b8] max-w-120">
-                            <li className='mb-3'>Strong foundation with multiple programming languages such as Python,
+                            <li className='mb-3'>Strong foundation in multiple programming languages such as Python,
                                 JS, and Java
                             </li>
                             <li className='mb-3'>Core coursework includes Data Structures, Algorithms, Operating

@@ -16,10 +16,6 @@ const Links : Link[] = [
         url : "/education"
     } ,
     {
-        name : "Projects",
-        url : "/projects"
-    } ,
-    {
         name : "Experience",
         url : "/experience"
     } ,

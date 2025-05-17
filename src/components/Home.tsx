@@ -41,18 +41,22 @@ export const Home = () => {
                                     combining analytical thinking with creative implementation. Always seeking new challenges
                                     to expand my technical expertise and create impactful applications that solve real-world problems.
                                 </p>
-                                <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300" className='flex gap-4 mt-8 w-100'>
-                                    <button className='  gap-2 flex items-center  rounded-lg text-center text-white px-5 py-2.5 bg-[#27BAA9] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
-                                        Get in Touch
-                                        <FiArrowRight/>
-                                    </button>
-
-                                    <button className='  flex items-center gap-2  rounded-lg text-center text-white  px-5 py-2.5 bg-[#171529] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
+                            <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"
+                                 className='flex gap-4 mt-8 w-100'>
+                                <button
+                                    className='  gap-2 flex items-center  rounded-lg text-center text-white px-5 py-2.5 bg-[#27BAA9] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
+                                    Get in Touch
+                                    <FiArrowRight/>
+                                </button>
+                                <a href='/Resume.pdf' download>
+                                    <button
+                                        className='  flex items-center gap-2  rounded-lg text-center text-white  px-5 py-2.5 bg-[#171529] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
                                         <FaDownload/>
                                         Download CV
                                     </button>
+                                </a>
 
-                                </div>
+                            </div>s
                         </div>
 
                         <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400"  className=' hidden lg:grid p-5 w-1/2  bg-gradient-to-br from-teal-500/20 to-transparent rounded-lg border-1 border-[#4E5260]  grid-cols-6 gap-4'>

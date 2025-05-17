@@ -3,7 +3,6 @@ import {useEffect, useState} from "react";
 
 const useScroll = (scrollSize : number)=>{
     const [isScrolled, setIsScrolled] = useState(false);
-    console.log(isScrolled)
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > scrollSize) {
