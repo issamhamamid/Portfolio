@@ -17,7 +17,7 @@ export const Education = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-9'>
                 <div data-aos='fade-up' data-aos-duration="1000">
                     <div
-                        className=' h-100 bg-[#212738] p-7 border-1 border-[#4E5260] flex flex-col gap-4 rounded-lg transition-transform tranform duration-500 ease-in-out hover:scale-108 hover:shadow-xl hover:shadow-cyan-400/20'>
+                        className=' h-120 bg-[#212738] p-7 border-1 border-[#4E5260] flex flex-col gap-4 rounded-lg transition-transform tranform duration-500 ease-in-out hover:scale-108 hover:shadow-xl hover:shadow-cyan-400/20'>
                         <div className='flex gap-4 items-center'>
                             <div className='rounded-xl p-3 bg-[#1F3543] text-[1.5rem] text-[#2DD4BF]'>
                                 <LuGraduationCap/>
@@ -50,7 +50,7 @@ export const Education = () => {
                 </div>
                 <div data-aos='fade-up' data-aos-duration="1000" data-aos-delay="200">
                     <div
-                         className=' h-100 bg-[#212738] p-7 flex flex-col gap-4 rounded-lg transition-transform tranform duration-500  hover:scale-108 ease-in-out hover:shadow-xl hover:shadow-cyan-400/20 '>
+                         className=' h-120 bg-[#212738] p-7 flex flex-col gap-4 rounded-lg transition-transform tranform duration-500  hover:scale-108 ease-in-out hover:shadow-xl hover:shadow-cyan-400/20 '>
                         <div className='flex gap-4 items-center'>
                             <div className='rounded-xl p-3 bg-[#1F3543] text-[1.5rem] text-[#2DD4BF]'>
                                 <LuGraduationCap/>

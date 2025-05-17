@@ -26,7 +26,7 @@ export const ProjectCard : FC<{name : string , description : string , tags : str
                 </div>
                 <div className='w-full flex justify-between items-center'>
                     <a className='flex gap-2 items-center text-[#2dd4bf] cursor-pointer'>
-                        <span>View Details</span>
+                        <span>View Pictures</span>
                         < IoMdArrowForward />
                     </a>
                     <a href={gh_link} className='flex  gap-2 font-bold hover:text-white cursor-pointer transition transition-hover duration-300 ease-out items-center text-[#94a3b8]'>

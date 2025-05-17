@@ -14,9 +14,9 @@ export const Experience = () => {
                 I'm an aspiring developer specializing in web development. My goal is to leverage my knowledge to
                 create innovative solutions for real-world problems.
             </p>
-            <a href='/Resume.pdf' download>
+            <a href='/Resume.pdf' className='mb-8' download>
                 <button
-                    className='flex items-center gap-2 mb-8 rounded-lg text-center text-white  px-7 py-3 bg-[#9B87F5] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
+                    className='flex items-center gap-2  rounded-lg text-center text-white  px-7 py-3 bg-[#9B87F5] cursor-pointer transform transition-transform duration-300 hover:scale-108'>
                     <FaDownload/>
                     Download Resume
                 </button>

@@ -33,7 +33,7 @@ export const Home = () => {
                                 <div className=' mb-1 text-center w-45 text-[.8rem] font-bold text-[#27BAA9] bg-[#09202f] rounded-xl p-0.5 '>
                                     Welcome to my portfolio
                                 </div>
-                                <span className=' leading-none text-[2.5rem] xl:text-[3rem] mb-2 bg-clip-text text-transparent font-bold  bg-gradient-to-r from-teal-400 to-amber-400'>Issam Hammamid</span>
+                                <span className=' leading-none text-[2.5rem] xl:text-[3rem] mb-2 bg-clip-text text-transparent font-bold  bg-gradient-to-r from-teal-400 to-amber-400 min-w-150'>Issam Hammamid</span>
                                 <h2 key={roles[index]} className='  slide-in text-[1.9rem] font-semibold text-[#94a3b8] mb-5 w-100'>{roles[index]}</h2>
                                 <p className=' w-100 md:w-120 xl:w-130 text-lg/7 text-[#94a3b8] '>
                                     Passionate about programming and software engineering.
