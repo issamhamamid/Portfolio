@@ -8,11 +8,6 @@ const Links : Link[] = [
     {
         name : "Home",
         url : "/"
-    } ,
-
-    {
-        name : "About",
-        url : "/about"
     }
 
     ,

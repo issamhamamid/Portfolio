@@ -5,6 +5,7 @@ import {Home} from "./components/Home.tsx";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
+import {Education} from "./components/Education.tsx";
 
 function App() {
 
@@ -13,12 +14,16 @@ function App() {
             once: true
         });
     }, []);
+
   return (
    <BrowserRouter>
      <Routes>
+
        <Route path='/'  element={<MainLayout/>}>
          <Route index element={<Home/>}/>
+         <Route path='/education' element={<Education/>}/>
        </Route>
+
      </Routes>
    </BrowserRouter>
   )

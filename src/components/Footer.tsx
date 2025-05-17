@@ -17,15 +17,15 @@ export const Footer = () => {
                     <div className=' flex flex-col '>
                         <h1 className='text-white text-md font-bold mb-3 ml-auto'>Connect with me</h1>
                         <div className='flex gap-4'>
-                            <a className='rounded-full bg-[#171529] p-3 items-center cursor-pointer transform transition-transform duration-300 hover:scale-110 text-[#94a3b8] hover:text-[#9b87f5]'>
+                            <a target="_blank" href='https://github.com/issamhamamid' className='rounded-full bg-[#171529] p-3 items-center cursor-pointer transform transition-transform duration-300 hover:scale-110 text-[#94a3b8] hover:text-[#9b87f5]'>
                                 <FiGithub className=' text-[1.1rem]'/>
                             </a>
 
-                            <a className='rounded-full bg-[#171529] p-3 items-center cursor-pointer transform transition-transform duration-300 hover:scale-110 text-[#94a3b8]  hover:text-[#9b87f5]'>
+                            <a target="_blank" href='https://www.linkedin.com/in/issam-hammamid-95a762251/' className='rounded-full bg-[#171529] p-3 items-center cursor-pointer transform transition-transform duration-300 hover:scale-110 text-[#94a3b8]  hover:text-[#9b87f5]'>
                                 <FiLinkedin className=' text-[1.1rem]'/>
                             </a>
 
-                            <a className='rounded-full bg-[#171529] p-3 items-center cursor-pointer transform transition-transform duration-300 hover:scale-110 text-[#94a3b8] hover:text-[#9b87f5]'>
+                            <a  href="mailto:issamhamamid6@gmail.com" className='rounded-full bg-[#171529] p-3 items-center cursor-pointer transform transition-transform duration-300 hover:scale-110 text-[#94a3b8] hover:text-[#9b87f5]'>
                                 <FaRegEnvelope className=' text-[1.1rem]'/>
                             </a>
 

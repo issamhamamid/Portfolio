@@ -26,7 +26,7 @@ export const Home = () => {
 
     return (
           <>
-           <section className='bg-[#080e21] h-screen flex items-center py-25 px-4 relative overflow-hidden'>
+           <section className='bg-[#080e21]  min-h-screen flex items-center py-25 px-4 relative overflow-hidden'>
                 <div  className='w-full xl:w-340  mx-auto bg '>
                     <div className=' flex'>
                         <div data-aos="fade-up" data-aos-duration="1000"    className='w-1/2 flex flex-col'>
@@ -34,7 +34,7 @@ export const Home = () => {
                                     Welcome to my portfolio
                                 </div>
                                 <span className=' leading-none text-[2.5rem] xl:text-[3rem] mb-2 bg-clip-text text-transparent font-bold  bg-gradient-to-r from-teal-400 to-amber-400'>Issam Hammamid</span>
-                                <h2 key={roles[index]} className='  slide-in text-[1.9rem] font-semibold text-[#94a3b8] mb-5'>{roles[index]}</h2>
+                                <h2 key={roles[index]} className='  slide-in text-[1.9rem] font-semibold text-[#94a3b8] mb-5 w-100'>{roles[index]}</h2>
                                 <p className=' w-100 md:w-120 xl:w-130 text-lg/7 text-[#94a3b8] '>
                                     Passionate about programming and software engineering.
                                     I specialize in web development,
@@ -91,10 +91,10 @@ export const Home = () => {
                                             <PostgreSQL width={30} height={30}/>
                                             <h1 className='mb-1 flex items-center gap-2'>SQL</h1>
                                     </div>
-                                         <p className='text-sm text-[#94a3b8] font-semibold'>Database</p>
+                                         <p className='text-sm text-[#94a3b8] font-semibold'>MySql and Postgres</p>
                                 </div>
 
-                                 <div className=' hover:scale-105 transform transition duration-300 ease-in-out border border-[#6b8d92] hover:shadow-xl hover:shadow-cyan-400/20 flex flex-col  bg-[#456D73] rounded-lg py-3 px-5 text-white text-lg font-bold col-span-2'>
+                                 <div className='hover:scale-105 transform transition duration-300 ease-in-out border border-[#6b8d92] hover:shadow-xl hover:shadow-cyan-400/20 flex flex-col  bg-[#456D73] rounded-lg py-3 px-5 text-white text-lg font-bold col-span-2'>
                                      <div className='mb-1 flex items-center gap-2'>
                                             <FaCodeBranch className='text-2xl text-[#2DD4BF]'/>
                                          <h1>API design</h1>
