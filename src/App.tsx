@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 import {useEffect} from "react";
 import {Education} from "./components/Education.tsx";
 import {Experience} from "./components/Experience.tsx";
+import {Contact} from "./components/Contact.tsx";
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
          <Route index element={<Home/>}/>
          <Route path='/education' element={<Education/>}/>
          <Route path='/experience' element={<Experience/>}/>
+         <Route path='/contact' element={<Contact/>}/>
        </Route>
 
      </Routes>

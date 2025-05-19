@@ -9,7 +9,7 @@ export const Experience = () => {
                 className=' text-center  text-[.8rem] font-bold text-[#9B87F5] bg-[#171B37] rounded-xl py-1 px-3  '>
                 Resume
             </div>
-            <h1 className=' text-center text-white text-5xl font-bold'>Professional Experience</h1>
+            <h1 className=' text-center text-white text-5xl font-bold '>Professional Experience</h1>
             <p className='text-lg/7 max-w-190 text-center text-[#94a3b8] mb-6 '>
                 I'm an aspiring developer specializing in web development. My goal is to leverage my knowledge to
                 create innovative solutions for real-world problems.
